@@ -15,26 +15,24 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import { HomeScreen } from './src/Screens/index';
+import BottomNavigator from './src/Navigation/BottomNavigator/index';
+import {HomeScreen} from './src/Screens/index';
 
-
-const App =()=>{
-  return <SafeAreaView style={styles.container}>
-    <StatusBar/>
-    <View style={styles.container}>
-      <Text>
-        Welcome to React Native
-      </Text>
-      <HomeScreen/>
-    </View>
-  </SafeAreaView>
-}
+const App = () => {
+  return (
+    <SafeAreaView style={styles.container}>
+      <StatusBar />
+      <View style={styles.container}>
+        <BottomNavigator />
+      </View>
+    </SafeAreaView>
+  );
+};
 
 export const styles = StyleSheet.create({
-container :{
-flex:1,
-
-}
+  container: {
+    flex: 1,
+  },
 });
 
 export default App;
