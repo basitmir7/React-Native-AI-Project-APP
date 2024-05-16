@@ -1,3 +1,6 @@
+/**
+ * Custom Icon Component
+ */
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
